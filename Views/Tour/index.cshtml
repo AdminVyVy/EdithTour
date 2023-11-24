@@ -1,0 +1,737 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<style>
+
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #fff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    swiper-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .avatar {
+        vertical-align: middle;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .thu-nghiem-zoom img {
+        display: block;
+        transition: all .3s ease;
+    }
+
+        .thu-nghiem-zoom img:hover {
+            transform: scale(1.3); /* cỡ zoom khi di chuột vào */
+        }
+
+    .thu-nghiem-zoom div {
+        display: block;
+        overflow: hidden;
+    }
+</style>
+
+
+
+<body>
+
+    <div class="container-fluid">
+        <div class="col-md-12">
+            <div class="parallax-intro">
+                <p class="titlecontent">Aboard tour</p>
+                <p class="under-border"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container light-style flex-grow-1 container-p-y">
+        <h4 class="font-weight-bold py-3 mb-4">
+            Tour Outside
+        </h4>
+
+        <div class="card overflow-hidden">
+            <div class="row no-gutters row-bordered row-border-light">
+                <div class="col-md-3 pt-0">
+                    <div class="list-group list-group-flush tour-links">
+                        <a class="list-group-item list-group-item-action active" data-toggle="list"
+                           href="#tour-korea">KOREA</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                           href="#tour-japan">JAPAN</a>
+
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                           href="#tour-china">CHINA</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                           href="#tour-singapore">SINGAPORE</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                           href="#tour-indonesia">INDONESIA</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                           href="#tour-malaysia">MALAYSIA</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                           href="#tour-france">FRANCE</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                           href="#tour-italy">ITALY</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                           href="#tour-australia">AUSTRALIA</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+
+
+        <div id="tour-korea">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-4">
+
+                        <div class="item-travel">
+                            <img src="~/Content/Images/Home/korea.jpg" class="img-tour" />
+                            <h6 class="childtitle-tour">Japan Tour</h6>
+                            <h6 class="have-tour mt-2">21 Tour</h6>
+                            <span class="timeline-tour"><h6 class="time-line">6 Days 4 Nights</h6></span>
+                            <a href="" class="link-detailtour"><p class="title-nametour">Japan Travel [Chitose - Noboribetsu - Jozankeu - Otaru - Sapporo]</p></a>
+                            <a href="" class="btn btn-primary btn-buy">Buy</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item-travel">
+                            <img src="~/Images/Home/logo.png" width="380" height="250" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item-travel">
+                            <img src="~/Images/Home/logo.png" width="380" height="250" />
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+                      loop="true">
+        <swiper-slide>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class=" thu-nghiem-zoom">
+                    <a href="~/Content/Images/Home/korea.jpg" target="_blank">
+                        <img src="~/Content/Images/Home/korea.jpg" alt="Fjords Avatar" class="avatar" style="width:100%">
+                        <div class="caption text-center">
+                            <p>THAILAND.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </swiper-slide>
+    </swiper-container>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    
+
+</body>
+
+

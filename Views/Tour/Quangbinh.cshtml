@@ -1,0 +1,143 @@
+﻿
+@{
+    ViewBag.Title = "Quangbinh";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Quangbinh</h2>
+
+
+<style>
+
+    .pagination {
+        display: inline-block;
+    }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+            .pagination a.active {
+                background-color: #4CAF50;
+                color: white;
+                border-radius: 5px;
+            }
+
+            .pagination a:hover:not(.active) {
+                background-color: #ddd;
+                border-radius: 5px;
+            }
+
+    .center {
+        text-align: center;
+    }
+
+
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #fff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    swiper-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="parallax-handbook">
+                <p class="titlecontent">VIETNAM</p>
+                <div class="under-border"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div style="margin-top:50px">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="item-travel">
+                    <img src="~/Content/Images/Home/INTSIDE/Sài Gòn - Quảng Bình/Động Phong Nha.jpg" class="img-tour" />
+                    <h6 class="childtitle-tour">Một ngày trải nghiệm Bà Nà Hills</h6>
+                    <h6 class="have-tour mt-2">21 Tour</h6>
+                    <span class="timeline-tour"><h6 class="time-line">6 Days 4 Nights</h6></span>
+                    <a href="" class="link-detailtour"><p class="title-nametour">Bà Nà Hills là một không gian cảnh quan hoàn toàn khác lạ so với thành phố biển Đà Nẵng rực nắng </p></a>
+                    <a href="" class="btn btn-primary btn-buy">Buy</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="item-travel">
+                    <img src="~/Images/Home/logo.png" width="380" height="250" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-travel">
+                    <img src="~/Images/Home/logo.png" width="380" height="250" />
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div style="margin-top:50px; height: 100px">
+    <div class="center">
+        <div class="pagination ">
+            <a href="#" class="page-link">&laquo;</a>
+            <a href="@Url.Action("Danang","Tour")" class="page-link">1</a>
+            <a href="@Url.Action("Quangbinh","Tour")" class="active">2</a>
+            <a href="@Url.Action("Saigon","Tour")" class="page-link">3</a>
+            <a href="@Url.Action("Hanoi","Tour")" class="page-link">4</a>
+            <a href="@Url.Action("Nhatrang","Tour")" class="page-link">5</a>
+            <a href="#" class="page-link">&raquo;</a>
+        </div>
+    </div>
+</div>
+
+
